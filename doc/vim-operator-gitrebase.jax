@@ -46,7 +46,7 @@ https://github.com/pocke/vim-operator-gitrebase
 ==============================================================================
 使い方						*vim-operator-gitrebase-usage*
 
-*vim-operator-gitrebase-mappings* から、必要とするものをマッピングしてください
+|vim-operator-gitrebase-mappings| から、必要とするものをマッピングしてください
 
 
 例
