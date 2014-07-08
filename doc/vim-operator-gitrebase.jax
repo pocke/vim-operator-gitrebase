@@ -1,0 +1,83 @@
+*vim-operator-gitrebase.txt*	gitrebase のコマンドを切り替えるオペレータです
+
+Version : 0.0.1
+Author  : pocke <p.ck.t22@gmail.com>
+License : MIT license  {{{
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+}}}
+
+==============================================================================
+目次					*vim-operator-gitrebase-contents*
+
+概要					|vim-operator-gitrebase-introduction|
+使い方					|vim-operator-gitrebase-usage|
+マッピング				|vim-operator-gitrebase-mappings|
+
+
+==============================================================================
+概要					*vim-operator-gitrebase-introduction*
+
+*vim-operator-gitrebase* は git rebase -i 時に便利なオペレータを定義します。
+
+要件:
+- operator-user
+	https://github.com/kana/vim-operator-user
+
+最新版:
+https://github.com/pocke/vim-operator-gitrebase
+
+
+==============================================================================
+使い方						*vim-operator-gitrebase-usage*
+
+*vim-operator-gitrebase-mappings* から、必要とするものをマッピングしてください
+
+
+例
+
+>
+	autocmd FileType gitrebase map <buffer> s <Plug>(operator-gitrebase-squash)
+<
+
+
+==============================================================================
+マッピング				*vim-operator-gitrebase-mappings*
+
+<Plug>(operator-gitrebase-pick)		*<Plug>(operator-gitrebase-pick)*
+	対象の範囲のコマンドをpickにします。
+
+<Plug>(operator-gitrebase-squash)	*<Plug>(operator-gitrebase-squash)*
+	対象の範囲のコマンドをsquashにします。
+
+<Plug>(operator-gitrebase-edit)		*<Plug>(operator-gitrebase-edit)*
+	対象の範囲のコマンドをeditにします。
+
+<Plug>(operator-gitrebase-reword)	*<Plug>(operator-gitrebase-reword)*
+	対象の範囲のコマンドをrewordにします。
+
+<Plug>(operator-gitrebase-fixup)	*<Plug>(operator-gitrebase-fixup)*
+	対象の範囲のコマンドをfixupにします。
+
+<Plug>(operator-gitrebase-exec)		*<Plug>(operator-gitrebase-exec)*
+	対象の範囲のコマンドをexecにします。
+
+
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:noet:fen:
